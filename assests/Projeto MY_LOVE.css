@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.mg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.social{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 3px;
+    color:black; 
+}
+
+.mg-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.mg-phone img {
+    height: 50rem;
+    margin-right: 150px;
+    filter: drop-shadow(25px 25px 15px #FF66C4);
+    border-radius: 10px;
+    
+
+}
+
+img:hover{
+    transform:scale(1.05);
+    transition-duration: 1s;
+}
+
+.mg-continue {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.login {
+    position: relative;
+    display: block;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 3px 0;
+    border: 2px ridge #FF66C4;
+    background-color: white;
+    overflow: hidden;
+    transition: 1s all ease;
+    padding: 8px;
+    border-radius: 4px;
+}
+.login::before{
+    
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  
+}
+
+
+.logout {
+    color:black;
+    margin-top: 1rem;
+    border-radius: 2px;
+}
+
+.not-account {
+    color: black;
+}
+
+.link-blue {
+    color:black;
+    border-radius: 2px;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img\ my\ love/googleplay-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img\ my\ love/apple-button.png');
+}
+.flex-container {
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+    padding: 10px 15px;
+
+}
+footer .footer{
+    justify-content: space-between;
+    color:black;
+}
+#link{
+    background-color:white;
+    color:black;
+}
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
